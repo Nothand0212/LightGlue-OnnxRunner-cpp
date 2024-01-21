@@ -1,133 +1,137 @@
-[2024-01-20 23:15:52.546] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/main.cpp:48:48] Start
-[2024-01-20 23:15:52.642] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:17:17] CombinedOnnxRunner created
-[2024-01-20 23:15:52.642] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:18:18] CombinedOnnxRunner created
-[2024-01-20 23:15:52.642] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:35:35] initOrtEnv start
-[2024-01-20 23:15:52.642] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:49:49] Using 16 threads, with graph optimization level 99
-[2024-01-20 23:15:52.642] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:54:54] Using CUDA provider with default options
-[2024-01-20 23:15:52.777] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:70:70] Loading model from /home/lin/CLionProjects/light_glue_onnx/models/superpoint_lightglue_end2end_fused.onnx
-[2024-01-20 23:15:53.591] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:81:81] input node name: image0
-[2024-01-20 23:15:53.591] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:81:81] input node name: image1
-[2024-01-20 23:15:53.591] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:95:95] output node name: kpts0
-[2024-01-20 23:15:53.591] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:95:95] output node name: kpts1
-[2024-01-20 23:15:53.591] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:95:95] output node name: matches0
-[2024-01-20 23:15:53.591] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:95:95] output node name: mscores0
-[2024-01-20 23:15:53.591] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:106:106] ONNX Runtime environment initialized successfully!
-[2024-01-20 23:15:53.591] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:107:107] input node names size: 2
-[2024-01-20 23:15:53.591] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/main.cpp:88:88] processing image /home/lin/Projects/vision_ws/data/left/0.png / /home/lin/Projects/vision_ws/data/right/0.png
-[2024-01-20 23:15:53.591] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:295:295] **** inferenceImage start ****
-[2024-01-20 23:15:53.591] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:306:306] preprocessing image_src
-[2024-01-20 23:15:53.591] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:123:123] image_temp size: [1280, 720]
-[2024-01-20 23:15:53.593] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:129:129] image_result size: [512, 288], scale from 1 to 0.4
-[2024-01-20 23:15:53.593] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:308:308] preprocessing image_dst
-[2024-01-20 23:15:53.593] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:123:123] image_temp size: [1280, 720]
-[2024-01-20 23:15:53.594] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:129:129] image_result size: [512, 288], scale from 1 to 0.4
-[2024-01-20 23:15:53.594] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:136:136] **** inference start ****
-[2024-01-20 23:15:53.594] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:140:140] image_src shape: [512, 288], channel: 1
-[2024-01-20 23:15:53.594] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:141:141] image_dst shape: [512, 288], channel: 1
-[2024-01-20 23:15:53.594] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:143:143] input node names size: 2
-[2024-01-20 23:15:53.594] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:146:146] ****input node name: image0
-[2024-01-20 23:15:53.594] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:146:146] ****input node name: image1
-[2024-01-20 23:15:53.594] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:149:149] output node names size: 4
-[2024-01-20 23:15:53.594] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:152:152] ****output node name: kpts0
-[2024-01-20 23:15:53.594] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:152:152] ****output node name: kpts1
-[2024-01-20 23:15:53.594] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:152:152] ****output node name: matches0
-[2024-01-20 23:15:53.594] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:152:152] ****output node name: mscores0
-[2024-01-20 23:15:53.594] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:157:157] creating input tensors
-[2024-01-20 23:15:53.596] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:170:170] creating memory info handler
-[2024-01-20 23:15:53.596] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:177:177] run inference
-[2024-01-20 23:15:54.460] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:182:182] inference time: 863 ms
-[2024-01-20 23:15:54.460] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:202:202] inference success
-[2024-01-20 23:15:54.460] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:218:218] **** postProcess start ****
-[2024-01-20 23:15:54.460] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:219:219] output tensors size: 4
-[2024-01-20 23:15:54.460] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:223:223] key points 0 shape: [1, 458, 2], size: 3
-[2024-01-20 23:15:54.460] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:227:227] key points 1 shape: [1, 364, 2], size: 3
-[2024-01-20 23:15:54.460] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:232:232] matches 0 shape: [240, 2], size: 2
-[2024-01-20 23:15:54.460] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:236:236] matches score shape: [240, 0], size: 1
-[2024-01-20 23:15:54.460] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:262:262] matches size: 198
-[2024-01-20 23:15:54.460] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:280:280] **** postProcess success ****
-[2024-01-20 23:15:54.460] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:328:328] **** inferenceImage success ****
-[2024-01-20 23:15:54.460] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/main.cpp:94:94] time consumed: 869.1972 / 869.1972
-[2024-01-20 23:16:28.880] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/main.cpp:88:88] processing image /home/lin/Projects/vision_ws/data/left/1.png / /home/lin/Projects/vision_ws/data/right/1.png
-[2024-01-20 23:16:28.880] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:295:295] **** inferenceImage start ****
-[2024-01-20 23:16:28.880] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:306:306] preprocessing image_src
-[2024-01-20 23:16:28.880] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:123:123] image_temp size: [1280, 720]
-[2024-01-20 23:16:28.880] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:129:129] image_result size: [512, 288], scale from 0.4 to 0.4
-[2024-01-20 23:16:28.881] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:308:308] preprocessing image_dst
-[2024-01-20 23:16:28.881] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:123:123] image_temp size: [1280, 720]
-[2024-01-20 23:16:28.881] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:129:129] image_result size: [512, 288], scale from 0.4 to 0.4
-[2024-01-20 23:16:28.881] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:136:136] **** inference start ****
-[2024-01-20 23:16:28.881] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:140:140] image_src shape: [512, 288], channel: 1
-[2024-01-20 23:16:28.881] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:141:141] image_dst shape: [512, 288], channel: 1
-[2024-01-20 23:16:28.881] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:143:143] input node names size: 2
-[2024-01-20 23:16:28.881] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:146:146] ****input node name: image0
-[2024-01-20 23:16:28.881] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:146:146] ****input node name: image1
-[2024-01-20 23:16:28.881] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:149:149] output node names size: 4
-[2024-01-20 23:16:28.881] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:152:152] ****output node name: kpts0
-[2024-01-20 23:16:28.881] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:152:152] ****output node name: kpts1
-[2024-01-20 23:16:28.881] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:152:152] ****output node name: matches0
-[2024-01-20 23:16:28.881] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:152:152] ****output node name: mscores0
-[2024-01-20 23:16:28.881] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:157:157] creating input tensors
-[2024-01-20 23:16:28.884] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:170:170] creating memory info handler
-[2024-01-20 23:16:28.884] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:177:177] run inference
-[2024-01-20 23:16:28.942] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:182:182] inference time: 57 ms
-[2024-01-20 23:16:28.942] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:202:202] inference success
-[2024-01-20 23:16:28.942] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:218:218] **** postProcess start ****
-[2024-01-20 23:16:28.942] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:219:219] output tensors size: 4
-[2024-01-20 23:16:28.942] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:223:223] key points 0 shape: [1, 501, 2], size: 3
-[2024-01-20 23:16:28.942] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:227:227] key points 1 shape: [1, 406, 2], size: 3
-[2024-01-20 23:16:28.942] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:232:232] matches 0 shape: [266, 2], size: 2
-[2024-01-20 23:16:28.942] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:236:236] matches score shape: [266, 0], size: 1
-[2024-01-20 23:16:28.942] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:262:262] matches size: 211
-[2024-01-20 23:16:28.942] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:280:280] **** postProcess success ****
-[2024-01-20 23:16:28.942] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:328:328] **** inferenceImage success ****
-[2024-01-20 23:16:28.942] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/main.cpp:94:94] time consumed: 62.667755 / 465.9324775
-[2024-01-20 23:16:29.673] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/main.cpp:88:88] processing image /home/lin/Projects/vision_ws/data/left/21.png / /home/lin/Projects/vision_ws/data/right/21.png
-[2024-01-20 23:16:29.673] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:295:295] **** inferenceImage start ****
-[2024-01-20 23:16:29.673] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:306:306] preprocessing image_src
-[2024-01-20 23:16:29.673] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:123:123] image_temp size: [1280, 720]
-[2024-01-20 23:16:29.675] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:129:129] image_result size: [512, 288], scale from 0.4 to 0.4
-[2024-01-20 23:16:29.675] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:308:308] preprocessing image_dst
-[2024-01-20 23:16:29.676] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:123:123] image_temp size: [1280, 720]
-[2024-01-20 23:16:29.678] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:129:129] image_result size: [512, 288], scale from 0.4 to 0.4
-[2024-01-20 23:16:29.678] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:136:136] **** inference start ****
-[2024-01-20 23:16:29.678] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:140:140] image_src shape: [512, 288], channel: 1
-[2024-01-20 23:16:29.678] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:141:141] image_dst shape: [512, 288], channel: 1
-[2024-01-20 23:16:29.678] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:143:143] input node names size: 2
-[2024-01-20 23:16:29.678] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:146:146] ****input node name: image0
-[2024-01-20 23:16:29.678] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:146:146] ****input node name: image1
-[2024-01-20 23:16:29.678] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:149:149] output node names size: 4
-[2024-01-20 23:16:29.678] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:152:152] ****output node name: kpts0
-[2024-01-20 23:16:29.678] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:152:152] ****output node name: kpts1
-[2024-01-20 23:16:29.678] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:152:152] ****output node name: matches0
-[2024-01-20 23:16:29.678] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:152:152] ****output node name: mscores0
-[2024-01-20 23:16:29.678] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:157:157] creating input tensors
-[2024-01-20 23:16:29.681] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:170:170] creating memory info handler
-[2024-01-20 23:16:29.681] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:177:177] run inference
-[2024-01-20 23:16:29.709] [MineLog] [error] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:206:206] **** inference failed with error message: Non-zero status code returned while running MultiHeadAttention node. Name:'MultiHeadAttention_1' Status Message: packed QKV format is not implemented for current GPU. Please disable it in fusion options. ****
-[2024-01-20 23:16:29.709] [MineLog] [error] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:315:315] **** inferenceImage failed ****
-[2024-01-20 23:16:29.709] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/main.cpp:94:94] time consumed: 35.715321 / 322.5267586666667
-[2024-01-20 23:16:32.518] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/main.cpp:88:88] processing image /home/lin/Projects/vision_ws/data/left/22.png / /home/lin/Projects/vision_ws/data/right/22.png
-[2024-01-20 23:16:32.519] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:295:295] **** inferenceImage start ****
-[2024-01-20 23:16:32.519] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:306:306] preprocessing image_src
-[2024-01-20 23:16:32.519] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:123:123] image_temp size: [1280, 720]
-[2024-01-20 23:16:32.521] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:129:129] image_result size: [512, 288], scale from 0.4 to 0.4
-[2024-01-20 23:16:32.521] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:308:308] preprocessing image_dst
-[2024-01-20 23:16:32.521] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:123:123] image_temp size: [1280, 720]
-[2024-01-20 23:16:32.523] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:129:129] image_result size: [512, 288], scale from 0.4 to 0.4
-[2024-01-20 23:16:32.523] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:136:136] **** inference start ****
-[2024-01-20 23:16:32.523] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:140:140] image_src shape: [512, 288], channel: 1
-[2024-01-20 23:16:32.523] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:141:141] image_dst shape: [512, 288], channel: 1
-[2024-01-20 23:16:32.523] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:143:143] input node names size: 2
-[2024-01-20 23:16:32.523] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:146:146] ****input node name: image0
-[2024-01-20 23:16:32.523] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:146:146] ****input node name: image1
-[2024-01-20 23:16:32.523] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:149:149] output node names size: 4
-[2024-01-20 23:16:32.523] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:152:152] ****output node name: kpts0
-[2024-01-20 23:16:32.523] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:152:152] ****output node name: kpts1
-[2024-01-20 23:16:32.523] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:152:152] ****output node name: matches0
-[2024-01-20 23:16:32.523] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:152:152] ****output node name: mscores0
-[2024-01-20 23:16:32.523] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:157:157] creating input tensors
-[2024-01-20 23:16:32.530] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:170:170] creating memory info handler
-[2024-01-20 23:16:32.530] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:177:177] run inference
-[2024-01-20 23:16:32.560] [MineLog] [error] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:206:206] **** inference failed with error message: Non-zero status code returned while running MultiHeadAttention node. Name:'MultiHeadAttention_1' Status Message: packed QKV format is not implemented for current GPU. Please disable it in fusion options. ****
-[2024-01-20 23:16:32.560] [MineLog] [error] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:315:315] **** inferenceImage failed ****
-[2024-01-20 23:16:32.560] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/main.cpp:94:94] time consumed: 41.104072 / 252.17108700000003
+[2024-01-21 09:27:07.704] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/main.cpp:48:48] Start
+[2024-01-21 09:27:07.796] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:17:17] CombinedOnnxRunner created
+[2024-01-21 09:27:07.796] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:18:18] CombinedOnnxRunner created
+[2024-01-21 09:27:07.796] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:35:35] initOrtEnv start
+[2024-01-21 09:27:07.796] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:49:49] Using 16 threads, with graph optimization level 99
+[2024-01-21 09:27:07.796] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:54:54] Using CUDA provider with default options
+[2024-01-21 09:27:07.920] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:70:70] Loading model from /home/lin/CLionProjects/light_glue_onnx/models/superpoint_lightglue_end2end_fused.onnx
+[2024-01-21 09:27:08.678] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:88:88] input node names and shapes
+[2024-01-21 09:27:08.678] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/include/base_onnx_runner.h:116:116] num_nodes: 2
+[2024-01-21 09:27:08.678] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/include/base_onnx_runner.h:122:122] extractor node name: image0
+[2024-01-21 09:27:08.678] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/include/base_onnx_runner.h:122:122] extractor node name: image1
+[2024-01-21 09:27:08.678] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:90:90] output node names and shapes
+[2024-01-21 09:27:08.678] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/include/base_onnx_runner.h:116:116] num_nodes: 4
+[2024-01-21 09:27:08.678] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/include/base_onnx_runner.h:122:122] extractor node name: kpts0
+[2024-01-21 09:27:08.678] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/include/base_onnx_runner.h:122:122] extractor node name: kpts1
+[2024-01-21 09:27:08.678] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/include/base_onnx_runner.h:122:122] extractor node name: matches0
+[2024-01-21 09:27:08.678] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/include/base_onnx_runner.h:122:122] extractor node name: mscores0
+[2024-01-21 09:27:08.678] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:110:110] ONNX Runtime environment initialized successfully!
+[2024-01-21 09:27:08.678] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:111:111] input node names size: 2
+[2024-01-21 09:27:08.678] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/main.cpp:88:88] processing image /home/lin/Projects/vision_ws/data/left/0.png / /home/lin/Projects/vision_ws/data/right/0.png
+[2024-01-21 09:27:08.678] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:299:299] **** inferenceImage start ****
+[2024-01-21 09:27:08.679] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:310:310] preprocessing image_src
+[2024-01-21 09:27:08.679] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:127:127] image_temp size: [1280, 720]
+[2024-01-21 09:27:08.681] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:133:133] image_result size: [512, 288], scale from 1 to 0.4
+[2024-01-21 09:27:08.681] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:312:312] preprocessing image_dst
+[2024-01-21 09:27:08.681] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:127:127] image_temp size: [1280, 720]
+[2024-01-21 09:27:08.682] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:133:133] image_result size: [512, 288], scale from 1 to 0.4
+[2024-01-21 09:27:08.682] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:140:140] **** inference start ****
+[2024-01-21 09:27:08.682] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:144:144] image_src shape: [512, 288], channel: 1
+[2024-01-21 09:27:08.682] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:145:145] image_dst shape: [512, 288], channel: 1
+[2024-01-21 09:27:08.682] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:147:147] input node names size: 2
+[2024-01-21 09:27:08.682] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:150:150] ****input node name: image0
+[2024-01-21 09:27:08.682] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:150:150] ****input node name: image1
+[2024-01-21 09:27:08.682] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:153:153] output node names size: 4
+[2024-01-21 09:27:08.682] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:156:156] ****output node name: kpts0
+[2024-01-21 09:27:08.682] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:156:156] ****output node name: kpts1
+[2024-01-21 09:27:08.682] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:156:156] ****output node name: matches0
+[2024-01-21 09:27:08.682] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:156:156] ****output node name: mscores0
+[2024-01-21 09:27:08.682] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:161:161] creating input tensors
+[2024-01-21 09:27:08.684] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:174:174] creating memory info handler
+[2024-01-21 09:27:08.684] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:181:181] run inference
+[2024-01-21 09:27:09.602] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:186:186] inference time: 917 ms
+[2024-01-21 09:27:09.602] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:206:206] inference success
+[2024-01-21 09:27:09.602] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:222:222] **** postProcess start ****
+[2024-01-21 09:27:09.602] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:223:223] output tensors size: 4
+[2024-01-21 09:27:09.602] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:227:227] key points 0 shape: [1, 458, 2], size: 3
+[2024-01-21 09:27:09.602] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:231:231] key points 1 shape: [1, 364, 2], size: 3
+[2024-01-21 09:27:09.602] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:236:236] matches 0 shape: [240, 2], size: 2
+[2024-01-21 09:27:09.602] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:240:240] matches score shape: [240, 0], size: 1
+[2024-01-21 09:27:09.602] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:266:266] matches size: 199
+[2024-01-21 09:27:09.602] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:284:284] **** postProcess success ****
+[2024-01-21 09:27:09.602] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:332:332] **** inferenceImage success ****
+[2024-01-21 09:27:09.602] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/main.cpp:94:94] time consumed: 923.71172 / 923.71172
+[2024-01-21 09:27:18.798] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/main.cpp:88:88] processing image /home/lin/Projects/vision_ws/data/left/1.png / /home/lin/Projects/vision_ws/data/right/1.png
+[2024-01-21 09:27:18.798] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:299:299] **** inferenceImage start ****
+[2024-01-21 09:27:18.799] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:310:310] preprocessing image_src
+[2024-01-21 09:27:18.799] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:127:127] image_temp size: [1280, 720]
+[2024-01-21 09:27:18.801] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:133:133] image_result size: [512, 288], scale from 0.4 to 0.4
+[2024-01-21 09:27:18.801] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:312:312] preprocessing image_dst
+[2024-01-21 09:27:18.801] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:127:127] image_temp size: [1280, 720]
+[2024-01-21 09:27:18.801] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:133:133] image_result size: [512, 288], scale from 0.4 to 0.4
+[2024-01-21 09:27:18.801] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:140:140] **** inference start ****
+[2024-01-21 09:27:18.801] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:144:144] image_src shape: [512, 288], channel: 1
+[2024-01-21 09:27:18.801] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:145:145] image_dst shape: [512, 288], channel: 1
+[2024-01-21 09:27:18.801] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:147:147] input node names size: 2
+[2024-01-21 09:27:18.801] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:150:150] ****input node name: image0
+[2024-01-21 09:27:18.801] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:150:150] ****input node name: image1
+[2024-01-21 09:27:18.801] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:153:153] output node names size: 4
+[2024-01-21 09:27:18.801] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:156:156] ****output node name: kpts0
+[2024-01-21 09:27:18.801] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:156:156] ****output node name: kpts1
+[2024-01-21 09:27:18.801] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:156:156] ****output node name: matches0
+[2024-01-21 09:27:18.801] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:156:156] ****output node name: mscores0
+[2024-01-21 09:27:18.801] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:161:161] creating input tensors
+[2024-01-21 09:27:18.803] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:174:174] creating memory info handler
+[2024-01-21 09:27:18.803] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:181:181] run inference
+[2024-01-21 09:27:18.852] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:186:186] inference time: 48 ms
+[2024-01-21 09:27:18.852] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:206:206] inference success
+[2024-01-21 09:27:18.852] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:222:222] **** postProcess start ****
+[2024-01-21 09:27:18.852] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:223:223] output tensors size: 4
+[2024-01-21 09:27:18.852] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:227:227] key points 0 shape: [1, 501, 2], size: 3
+[2024-01-21 09:27:18.852] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:231:231] key points 1 shape: [1, 406, 2], size: 3
+[2024-01-21 09:27:18.852] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:236:236] matches 0 shape: [266, 2], size: 2
+[2024-01-21 09:27:18.852] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:240:240] matches score shape: [266, 0], size: 1
+[2024-01-21 09:27:18.852] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:266:266] matches size: 211
+[2024-01-21 09:27:18.852] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:284:284] **** postProcess success ****
+[2024-01-21 09:27:18.852] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:332:332] **** inferenceImage success ****
+[2024-01-21 09:27:18.852] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/main.cpp:94:94] time consumed: 53.936317 / 488.8240185
+[2024-01-21 09:27:22.195] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/main.cpp:88:88] processing image /home/lin/Projects/vision_ws/data/left/21.png / /home/lin/Projects/vision_ws/data/right/21.png
+[2024-01-21 09:27:22.195] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:299:299] **** inferenceImage start ****
+[2024-01-21 09:27:22.195] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:310:310] preprocessing image_src
+[2024-01-21 09:27:22.195] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:127:127] image_temp size: [1280, 720]
+[2024-01-21 09:27:22.197] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:133:133] image_result size: [512, 288], scale from 0.4 to 0.4
+[2024-01-21 09:27:22.197] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:312:312] preprocessing image_dst
+[2024-01-21 09:27:22.197] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:127:127] image_temp size: [1280, 720]
+[2024-01-21 09:27:22.199] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:133:133] image_result size: [512, 288], scale from 0.4 to 0.4
+[2024-01-21 09:27:22.199] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:140:140] **** inference start ****
+[2024-01-21 09:27:22.199] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:144:144] image_src shape: [512, 288], channel: 1
+[2024-01-21 09:27:22.199] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:145:145] image_dst shape: [512, 288], channel: 1
+[2024-01-21 09:27:22.199] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:147:147] input node names size: 2
+[2024-01-21 09:27:22.199] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:150:150] ****input node name: image0
+[2024-01-21 09:27:22.199] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:150:150] ****input node name: image1
+[2024-01-21 09:27:22.199] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:153:153] output node names size: 4
+[2024-01-21 09:27:22.199] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:156:156] ****output node name: kpts0
+[2024-01-21 09:27:22.199] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:156:156] ****output node name: kpts1
+[2024-01-21 09:27:22.199] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:156:156] ****output node name: matches0
+[2024-01-21 09:27:22.199] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:156:156] ****output node name: mscores0
+[2024-01-21 09:27:22.199] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:161:161] creating input tensors
+[2024-01-21 09:27:22.206] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:174:174] creating memory info handler
+[2024-01-21 09:27:22.206] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:181:181] run inference
+[2024-01-21 09:27:22.237] [MineLog] [error] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:210:210] **** inference failed with error message: Non-zero status code returned while running MultiHeadAttention node. Name:'MultiHeadAttention_1' Status Message: packed QKV format is not implemented for current GPU. Please disable it in fusion options. ****
+[2024-01-21 09:27:22.237] [MineLog] [error] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:319:319] **** inferenceImage failed ****
+[2024-01-21 09:27:22.237] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/main.cpp:94:94] time consumed: 42.119868 / 339.922635
+[2024-01-21 09:27:22.714] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/main.cpp:88:88] processing image /home/lin/Projects/vision_ws/data/left/22.png / /home/lin/Projects/vision_ws/data/right/22.png
+[2024-01-21 09:27:22.714] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:299:299] **** inferenceImage start ****
+[2024-01-21 09:27:22.715] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:310:310] preprocessing image_src
+[2024-01-21 09:27:22.715] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:127:127] image_temp size: [1280, 720]
+[2024-01-21 09:27:22.717] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:133:133] image_result size: [512, 288], scale from 0.4 to 0.4
+[2024-01-21 09:27:22.717] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:312:312] preprocessing image_dst
+[2024-01-21 09:27:22.717] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:127:127] image_temp size: [1280, 720]
+[2024-01-21 09:27:22.719] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:133:133] image_result size: [512, 288], scale from 0.4 to 0.4
+[2024-01-21 09:27:22.719] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:140:140] **** inference start ****
+[2024-01-21 09:27:22.720] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:144:144] image_src shape: [512, 288], channel: 1
+[2024-01-21 09:27:22.720] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:145:145] image_dst shape: [512, 288], channel: 1
+[2024-01-21 09:27:22.720] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:147:147] input node names size: 2
+[2024-01-21 09:27:22.720] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:150:150] ****input node name: image0
+[2024-01-21 09:27:22.720] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:150:150] ****input node name: image1
+[2024-01-21 09:27:22.720] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:153:153] output node names size: 4
+[2024-01-21 09:27:22.720] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:156:156] ****output node name: kpts0
+[2024-01-21 09:27:22.720] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:156:156] ****output node name: kpts1
+[2024-01-21 09:27:22.720] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:156:156] ****output node name: matches0
+[2024-01-21 09:27:22.720] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:156:156] ****output node name: mscores0
+[2024-01-21 09:27:22.720] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:161:161] creating input tensors
+[2024-01-21 09:27:22.727] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:174:174] creating memory info handler
+[2024-01-21 09:27:22.727] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:181:181] run inference
+[2024-01-21 09:27:22.755] [MineLog] [error] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:210:210] **** inference failed with error message: Non-zero status code returned while running MultiHeadAttention node. Name:'MultiHeadAttention_1' Status Message: packed QKV format is not implemented for current GPU. Please disable it in fusion options. ****
+[2024-01-21 09:27:22.755] [MineLog] [error] [/home/lin/CLionProjects/light_glue_onnx/src/combined_onnx_runner.cpp:319:319] **** inferenceImage failed ****
+[2024-01-21 09:27:22.755] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/main.cpp:94:94] time consumed: 41.040146 / 265.20201275

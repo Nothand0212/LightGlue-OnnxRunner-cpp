@@ -71,36 +71,10 @@ int CombinedOnnxRunner::initOrtEnv( const Config& config )
     session_uptr_ = std::make_unique<Ort::Session>( env_, config.combiner_path.c_str(), session_options_ );
 
     // get input node names
-
-    const size_t num_input_nodes = session_uptr_->GetInputCount();
-    input_node_names_.reserve( num_input_nodes );
-    for ( size_t i = 0; i < num_input_nodes; i++ )
-    {
-      char* input_node_name_temp = new char[ std::strlen( session_uptr_->GetInputNameAllocated( i, allocator_ ).get() ) + 1 ];
-      std::strcpy( input_node_name_temp, session_uptr_->GetInputNameAllocated( i, allocator_ ).get() );
-      INFO( logger, "input node name: {0}", input_node_name_temp );
-      // input_node_names_[ i ] = input_node_name_temp;
-      input_node_names_.push_back( input_node_name_temp );
-
-      //   input_node_names_.push_back( std::string( session_uptr_->GetInputNameAllocated( i, allocator_ ).get() ).c_str() );
-      input_node_shapes_.emplace_back( session_uptr_->GetInputTypeInfo( i ).GetTensorTypeAndShapeInfo().GetShape() );
-    }
-
-    const size_t num_output_nodes = session_uptr_->GetOutputCount();
-    output_node_names_.reserve( num_output_nodes );
-    for ( size_t i = 0; i < num_output_nodes; i++ )
-    {
-      char* output_node_names_temp = new char[ std::strlen( session_uptr_->GetOutputNameAllocated( i, allocator_ ).get() ) + 1 ];
-      std::strcpy( output_node_names_temp, session_uptr_->GetOutputNameAllocated( i, allocator_ ).get() );
-      INFO( logger, "output node name: {0}", output_node_names_temp );
-      // output_node_names_[ i ] = output_node_names_temp;
-      output_node_names_.push_back( output_node_names_temp );
-
-
-      //   output_node_names_.push_back( std::string( session_uptr_->GetOutputNameAllocated( i, allocator_ ).get() ).c_str() );
-      output_node_shapes_.emplace_back( session_uptr_->GetOutputTypeInfo( i ).GetTensorTypeAndShapeInfo().GetShape() );
-    }
-
+    INFO( logger, "input node names and shapes" );
+    extractNodesInfo( IO{ INPUT }, input_node_names_, input_node_shapes_, session_uptr_, allocator_ );
+    INFO( logger, "output node names and shapes" );
+    extractNodesInfo( IO{ OUTPUT }, output_node_names_, output_node_shapes_, session_uptr_, allocator_ );
 
     // delete model_path;
     INFO( logger, "ONNX Runtime environment initialized successfully!" );
