@@ -1,5 +1,0 @@
-{
-    "matcher_path": "/home/lin/CLionProjects/light_glue_onnx/models/superpoint_lightglue_fused.onnx",
-    "extractor_path": "/home/lin/CLionProjects/light_glue_onnx/models/superpoint.onnx",
-    "combiner_path": "/home/lin/CLionProjects/light_glue_onnx/models/superpoint_2048_lightglue_end2end.onnx",
-}
