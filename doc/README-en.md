@@ -10,7 +10,7 @@ Test environment:
 - SPDLOG 1.13.0
 - OpenCV 4.9.0
 
-![Result](doc/Matches_screenshot_20.01.2024.png)
+![Result](Matches_screenshot_20.01.2024.png)
 
 ## Complie and Run
 
