@@ -50,7 +50,7 @@ private:
   std::vector<float> scales_{ 1.0f, 1.0f };
 
   std::vector<std::vector<Ort::Value>> output_tensors_extoractor_;  // two dimension for image_src and image_dst
-  std::vector<Ort::Value>              output_tensors_matcher_;
+  std::vector<Ort::Value>              output_tensor_matcher_;
 
   std::pair<std::vector<cv::Point2f>, std::vector<cv::Point2f>> key_points_result_;
   std::vector<cv::Point2f>                                      key_points_src_;
@@ -59,7 +59,7 @@ private:
 private:
   cv::Mat                                     preProcessExtractor( const Config& config, const cv::Mat& image, float& scale );
   int                                         inferenceExtractor( const Config& config, const cv::Mat& image );  // run each image separately
-  std::pair<std::vector<cv::Point2f>, float*> postProcessExtractor( const Config& config, const std::vector<Ort::Value>& tensor );
+  std::pair<std::vector<cv::Point2f>, float*> postProcessExtractor( const Config& config, std::vector<Ort::Value> tensor );
 
 
   std::vector<cv::Point2f> preProcessMatcher( std::vector<cv::Point2f> key_points, const int& height, const int& width );

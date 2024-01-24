@@ -76,9 +76,7 @@ int CombinedOnnxRunner::initOrtEnv( const Config& config )
     INFO( logger, "output node names and shapes" );
     extractNodesInfo( IO{ OUTPUT }, output_node_names_, output_node_shapes_, session_uptr_, allocator_ );
 
-    // delete model_path;
     INFO( logger, "ONNX Runtime environment initialized successfully!" );
-    INFO( logger, "input node names size: {0}", input_node_names_.size() );
   }
   catch ( const std::exception& e )
   {
@@ -145,8 +143,8 @@ int CombinedOnnxRunner::inference( const Config& config, const cv::Mat& image_sr
     auto memory_info_handler = Ort::MemoryInfo::CreateCpu( OrtAllocatorType::OrtDeviceAllocator, OrtMemType::OrtMemTypeDefault );
     // Ort::MemoryInfo         memory_info_handler( "Cuda", OrtAllocatorType::OrtDeviceAllocator, 0, OrtMemType::OrtMemTypeDefault );
     std::vector<Ort::Value> input_tensors;
-    input_tensors.push_back( Ort::Value::CreateTensor<float>( memory_info_handler, input_tensor_values_src.data(), input_tensor_size_src, input_node_shapes_[ 0 ].data(), input_node_shapes_[ 0 ].size() ) );
-    input_tensors.push_back( Ort::Value::CreateTensor<float>( memory_info_handler, input_tensor_values_dst.data(), input_tensor_size_dst, input_node_shapes_[ 1 ].data(), input_node_shapes_[ 1 ].size() ) );
+    input_tensors.push_back( Ort::Value::CreateTensor<float>( memory_info_handler, input_tensor_values_src.data(), input_tensor_values_src.size(), input_node_shapes_[ 0 ].data(), input_node_shapes_[ 0 ].size() ) );
+    input_tensors.push_back( Ort::Value::CreateTensor<float>( memory_info_handler, input_tensor_values_dst.data(), input_tensor_values_dst.size(), input_node_shapes_[ 1 ].data(), input_node_shapes_[ 1 ].size() ) );
 
     INFO( logger, "run inference" );
     auto timer_tic          = std::chrono::high_resolution_clock::now();
