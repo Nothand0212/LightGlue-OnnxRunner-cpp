@@ -1,5 +1,7 @@
 # ONNX Runtime Light Glue Example
 
+[ **简体中文**  /  [English](doc/README-en.md)]
+
 一个简单的ONNX Runtime Light Glue示例。
 
 测试环境：
@@ -11,6 +13,21 @@
 - OpenCV 4.9.0
 
 ![结果](doc/Matches_screenshot_20.01.2024.png)
+
+## 编译运行
+
+### 编译
+
+- git clone https://github.com/Nothand0212/LightGlue-OnnxRunner-cpp.git
+- cd LightGlue-OnnxRunner-cpp
+- vim CMakeLists.txt # 修改ONNX_RUNTIME_DIR路径-->set(ONNXRUNTIME_ROOTDIR /home/lin/Projects/onnxruntime-linux-x64-gpu-1.16.3)里的路径是我自己的路径，修改为你自己onnx runtime的路径
+- mkdir build && cd build
+- cmake..
+- make
+
+### 运行
+
+- 修改`config/param.json`里的路径，包括matcher_path、extractor_path、combiner_path、image_src_path和image_dst_path等。
 
 ## 更新日志
 
