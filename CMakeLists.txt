@@ -29,6 +29,12 @@ set(CMAKE_CXX_STANDARD 17)
 # endif()
 
 
+if(CMAKE_BUILD_TYPE STREQUAL "Debug")
+    add_definitions(-DDEBUG)
+elseif(CMAKE_BUILD_TYPE STREQUAL "Release")
+    add_definitions(-DRELEASE)
+endif()
+
 
 
 find_package(CUDA REQUIRED)
@@ -62,12 +68,18 @@ target_link_libraries(combine_onnx_runner onnxruntime image_process ${OpenCV_LIB
 add_library(decoupled_onnx_runner src/decoupled_onnx_runner.cpp)
 target_link_libraries(decoupled_onnx_runner onnxruntime image_process ${OpenCV_LIBS} logger spdlog::spdlog)
 
+add_library(extractor src/extractor/extractor.cpp)
+target_link_libraries(extractor onnxruntime image_process ${OpenCV_LIBS} logger spdlog::spdlog)
+
 
 add_executable(onnx_test test/onnx_test.cpp)
 target_link_libraries(onnx_test onnxruntime logger spdlog::spdlog)
 
-add_executable(combined_test src/combined_test.cpp)
+add_executable(combined_test test/combined_test.cpp)
 target_link_libraries(combined_test combine_onnx_runner onnxruntime image_process ${OpenCV_LIBS} logger spdlog::spdlog)
 
-add_executable(decoupled_test src/decoupled_test.cpp)
+add_executable(decoupled_test test/decoupled_test.cpp)
 target_link_libraries(decoupled_test decoupled_onnx_runner onnxruntime image_process ${OpenCV_LIBS} logger spdlog::spdlog)
+
+add_executable(extractor_test test/extractor_test.cpp)
+target_link_libraries(extractor_test extractor onnxruntime image_process ${OpenCV_LIBS} logger spdlog::spdlog)

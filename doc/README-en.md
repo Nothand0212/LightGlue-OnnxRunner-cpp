@@ -29,9 +29,10 @@ Test environment:
 
 ## Update Log
 
+- 2024-01-28
+    - 1. Added a single Extractor class;
 - 2024-01-24
     - 1. Added support for non-end-to-end models (only supports super point and light glue)
-
 - 2024-01-20
     - 1. Currently only supports the end-to-end model of super point and light glue
 

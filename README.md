@@ -31,9 +31,10 @@
 
 ## 更新日志
 
+- 2024-01-28
+    - 1. 增加单独的`Extractor`类
 - 2024-01-24
     - 1. 增加非端到端模型的支持（只支持super point 和 light glue）
-
 - 2024-01-20
     - 1. 目前只支持super point 和 light glue 的端到端模型
 

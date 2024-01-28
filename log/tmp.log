@@ -1,0 +1,245 @@
+[2024-01-28 21:37:03.044] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/test/decoupled_test.cpp:48:48] Start
+[2024-01-28 21:37:03.158] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:17:17] DecoupledOnnxRunner created
+[2024-01-28 21:37:03.158] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:39:39] initializing Ort Env
+[2024-01-28 21:37:03.158] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:59:59] Using 16 threads, with graph optimization level 99
+[2024-01-28 21:37:03.158] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:63:63] Using CUDA provider with default options
+[2024-01-28 21:37:03.309] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:80:80] Loading extractor model from /home/lin/CLionProjects/light_glue_onnx/models/superpoint.onnx and matcher model from /home/lin/CLionProjects/light_glue_onnx/models/superpoint_lightglue_fused_fp16.onnx
+[2024-01-28 21:37:04.024] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:86:86] extractor input node names and shapes
+[2024-01-28 21:37:04.024] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/include/base_onnx_runner.h:74:74] num_nodes: 1
+[2024-01-28 21:37:04.024] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/include/base_onnx_runner.h:80:80] extractor node name: image
+[2024-01-28 21:37:04.024] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:88:88] extractor output node names and shapes
+[2024-01-28 21:37:04.024] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/include/base_onnx_runner.h:74:74] num_nodes: 3
+[2024-01-28 21:37:04.024] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/include/base_onnx_runner.h:80:80] extractor node name: keypoints
+[2024-01-28 21:37:04.024] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/include/base_onnx_runner.h:80:80] extractor node name: scores
+[2024-01-28 21:37:04.024] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/include/base_onnx_runner.h:80:80] extractor node name: descriptors
+[2024-01-28 21:37:04.024] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:92:92] matcher input node names and shapes
+[2024-01-28 21:37:04.024] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/include/base_onnx_runner.h:74:74] num_nodes: 4
+[2024-01-28 21:37:04.024] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/include/base_onnx_runner.h:80:80] extractor node name: kpts0
+[2024-01-28 21:37:04.024] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/include/base_onnx_runner.h:80:80] extractor node name: kpts1
+[2024-01-28 21:37:04.024] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/include/base_onnx_runner.h:80:80] extractor node name: desc0
+[2024-01-28 21:37:04.024] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/include/base_onnx_runner.h:80:80] extractor node name: desc1
+[2024-01-28 21:37:04.024] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:94:94] matcher output node names and shapes
+[2024-01-28 21:37:04.024] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/include/base_onnx_runner.h:74:74] num_nodes: 2
+[2024-01-28 21:37:04.024] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/include/base_onnx_runner.h:80:80] extractor node name: matches0
+[2024-01-28 21:37:04.024] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/include/base_onnx_runner.h:80:80] extractor node name: mscores0
+[2024-01-28 21:37:04.024] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:97:97] ONNX Runtime environment initialized successfully!
+[2024-01-28 21:37:04.024] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/test/decoupled_test.cpp:88:88] processing image /home/lin/CLionProjects/light_glue_onnx/data/left/0.png / /home/lin/CLionProjects/light_glue_onnx/data/right/0.png
+[2024-01-28 21:37:04.024] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:401:401] **** inference image pair start ****
+[2024-01-28 21:37:04.025] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:412:412] preprocessing image_src
+[2024-01-28 21:37:04.025] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:112:112] image_temp size: [1280, 720]
+[2024-01-28 21:37:04.027] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:117:117] image_result size: [512, 288], scale from 1 to 0.4
+[2024-01-28 21:37:04.027] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:414:414] preprocessing image_dst
+[2024-01-28 21:37:04.027] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:112:112] image_temp size: [1280, 720]
+[2024-01-28 21:37:04.027] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:117:117] image_result size: [512, 288], scale from 1 to 0.4
+[2024-01-28 21:37:04.027] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:124:124] **** extractor inference start ****
+[2024-01-28 21:37:04.027] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:128:128] image shape: [512, 288], channel: 1
+[2024-01-28 21:37:04.029] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:138:138] creating memory info handler
+[2024-01-28 21:37:04.796] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:148:148] inference extractor time consumed: 767.632378
+[2024-01-28 21:37:04.796] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:167:167] inference success.
+[2024-01-28 21:37:04.796] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:124:124] **** extractor inference start ****
+[2024-01-28 21:37:04.796] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:128:128] image shape: [512, 288], channel: 1
+[2024-01-28 21:37:04.797] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:138:138] creating memory info handler
+[2024-01-28 21:37:04.812] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:148:148] inference extractor time consumed: 14.154785
+[2024-01-28 21:37:04.812] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:167:167] inference success.
+[2024-01-28 21:37:04.812] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:180:180] **** extractor post process start ****
+[2024-01-28 21:37:04.812] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:187:187] key points shape: [1, 458, 2]
+[2024-01-28 21:37:04.812] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:191:191] scores shape: [1, 458, 0]
+[2024-01-28 21:37:04.812] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:196:196] descriptor shape: [1, 458, 256]
+[2024-01-28 21:37:04.812] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:219:219] extractor post process success with 458 key points, 214 / 244.
+[2024-01-28 21:37:04.812] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:180:180] **** extractor post process start ****
+[2024-01-28 21:37:04.812] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:187:187] key points shape: [1, 364, 2]
+[2024-01-28 21:37:04.812] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:191:191] scores shape: [1, 364, 256]
+[2024-01-28 21:37:04.812] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:196:196] descriptor shape: [1, 364, 256]
+[2024-01-28 21:37:04.812] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:219:219] extractor post process success with 364 key points, 169 / 195.
+[2024-01-28 21:37:04.812] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:237:237] **** matcher inference start ****
+[2024-01-28 21:37:04.812] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:246:246] creating memory info handler
+[2024-01-28 21:37:04.812] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:249:249] preparing input tensors
+[2024-01-28 21:37:04.812] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:253:253] trans to one dimension
+[2024-01-28 21:37:04.812] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:267:267] constructing input tensors
+[2024-01-28 21:37:04.812] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:282:282] input node 0 name: kpts0
+[2024-01-28 21:37:04.812] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:287:287] input node shape size: 3, shape: 1, -1, 2
+[2024-01-28 21:37:04.812] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:288:288] input node shape size: 3, shape: 1, 458, 2
+[2024-01-28 21:37:04.812] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:282:282] input node 1 name: kpts1
+[2024-01-28 21:37:04.812] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:287:287] input node shape size: 3, shape: 1, -1, 2
+[2024-01-28 21:37:04.812] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:288:288] input node shape size: 3, shape: 1, 364, 2
+[2024-01-28 21:37:04.812] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:282:282] input node 2 name: desc0
+[2024-01-28 21:37:04.812] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:287:287] input node shape size: 3, shape: 1, -1, 256
+[2024-01-28 21:37:04.812] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:288:288] input node shape size: 3, shape: 1, 458, 256
+[2024-01-28 21:37:04.812] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:282:282] input node 3 name: desc1
+[2024-01-28 21:37:04.812] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:287:287] input node shape size: 3, shape: 1, -1, 256
+[2024-01-28 21:37:04.812] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:288:288] input node shape size: 3, shape: 1, 364, 256
+[2024-01-28 21:37:04.812] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:294:294] output node name: matches0
+[2024-01-28 21:37:04.812] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:294:294] output node name: mscores0
+[2024-01-28 21:37:04.845] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:299:299] matcher inference time consumed: 32.795927
+[2024-01-28 21:37:04.845] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:318:318] matcher inference success.
+[2024-01-28 21:37:04.845] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:331:331] **** matcher post process start ****
+[2024-01-28 21:37:04.845] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:339:339] matches shape: 240
+[2024-01-28 21:37:04.845] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:339:339] matches shape: 2
+[2024-01-28 21:37:04.845] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:347:347] matches shape: 240
+[2024-01-28 21:37:04.845] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:388:388] matches size: 239
+[2024-01-28 21:37:04.845] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/test/decoupled_test.cpp:94:94] time consumed: 820.528248 / 820.528248
+[2024-01-28 21:37:05.682] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/test/decoupled_test.cpp:88:88] processing image /home/lin/CLionProjects/light_glue_onnx/data/left/1.png / /home/lin/CLionProjects/light_glue_onnx/data/right/1.png
+[2024-01-28 21:37:05.682] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:401:401] **** inference image pair start ****
+[2024-01-28 21:37:05.682] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:412:412] preprocessing image_src
+[2024-01-28 21:37:05.682] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:112:112] image_temp size: [1280, 720]
+[2024-01-28 21:37:05.683] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:117:117] image_result size: [512, 288], scale from 0.4 to 0.4
+[2024-01-28 21:37:05.683] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:414:414] preprocessing image_dst
+[2024-01-28 21:37:05.683] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:112:112] image_temp size: [1280, 720]
+[2024-01-28 21:37:05.683] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:117:117] image_result size: [512, 288], scale from 0.4 to 0.4
+[2024-01-28 21:37:05.683] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:124:124] **** extractor inference start ****
+[2024-01-28 21:37:05.684] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:128:128] image shape: [512, 288], channel: 1
+[2024-01-28 21:37:05.685] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:138:138] creating memory info handler
+[2024-01-28 21:37:05.700] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:148:148] inference extractor time consumed: 15.375126
+[2024-01-28 21:37:05.700] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:167:167] inference success.
+[2024-01-28 21:37:05.700] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:124:124] **** extractor inference start ****
+[2024-01-28 21:37:05.700] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:128:128] image shape: [512, 288], channel: 1
+[2024-01-28 21:37:05.701] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:138:138] creating memory info handler
+[2024-01-28 21:37:05.715] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:148:148] inference extractor time consumed: 13.661359
+[2024-01-28 21:37:05.715] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:167:167] inference success.
+[2024-01-28 21:37:05.715] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:180:180] **** extractor post process start ****
+[2024-01-28 21:37:05.715] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:187:187] key points shape: [1, 501, 2]
+[2024-01-28 21:37:05.715] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:191:191] scores shape: [1, 501, 140702324024096]
+[2024-01-28 21:37:05.715] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:196:196] descriptor shape: [1, 501, 256]
+[2024-01-28 21:37:05.715] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:219:219] extractor post process success with 501 key points, 219 / 282.
+[2024-01-28 21:37:05.715] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:180:180] **** extractor post process start ****
+[2024-01-28 21:37:05.715] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:187:187] key points shape: [1, 406, 2]
+[2024-01-28 21:37:05.715] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:191:191] scores shape: [1, 406, 256]
+[2024-01-28 21:37:05.715] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:196:196] descriptor shape: [1, 406, 256]
+[2024-01-28 21:37:05.715] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:219:219] extractor post process success with 406 key points, 172 / 234.
+[2024-01-28 21:37:05.715] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:237:237] **** matcher inference start ****
+[2024-01-28 21:37:05.715] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:246:246] creating memory info handler
+[2024-01-28 21:37:05.715] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:249:249] preparing input tensors
+[2024-01-28 21:37:05.715] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:253:253] trans to one dimension
+[2024-01-28 21:37:05.715] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:267:267] constructing input tensors
+[2024-01-28 21:37:05.715] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:282:282] input node 0 name: kpts0
+[2024-01-28 21:37:05.715] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:287:287] input node shape size: 3, shape: 1, -1, 2
+[2024-01-28 21:37:05.715] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:288:288] input node shape size: 3, shape: 1, 501, 2
+[2024-01-28 21:37:05.715] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:282:282] input node 1 name: kpts1
+[2024-01-28 21:37:05.715] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:287:287] input node shape size: 3, shape: 1, -1, 2
+[2024-01-28 21:37:05.715] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:288:288] input node shape size: 3, shape: 1, 406, 2
+[2024-01-28 21:37:05.715] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:282:282] input node 2 name: desc0
+[2024-01-28 21:37:05.715] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:287:287] input node shape size: 3, shape: 1, -1, 256
+[2024-01-28 21:37:05.715] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:288:288] input node shape size: 3, shape: 1, 501, 256
+[2024-01-28 21:37:05.715] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:282:282] input node 3 name: desc1
+[2024-01-28 21:37:05.715] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:287:287] input node shape size: 3, shape: 1, -1, 256
+[2024-01-28 21:37:05.715] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:288:288] input node shape size: 3, shape: 1, 406, 256
+[2024-01-28 21:37:05.715] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:294:294] output node name: matches0
+[2024-01-28 21:37:05.715] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:294:294] output node name: mscores0
+[2024-01-28 21:37:05.726] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:299:299] matcher inference time consumed: 10.568565
+[2024-01-28 21:37:05.726] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:318:318] matcher inference success.
+[2024-01-28 21:37:05.726] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:331:331] **** matcher post process start ****
+[2024-01-28 21:37:05.726] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:339:339] matches shape: 266
+[2024-01-28 21:37:05.726] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:339:339] matches shape: 2
+[2024-01-28 21:37:05.726] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:347:347] matches shape: 266
+[2024-01-28 21:37:05.726] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:388:388] matches size: 265
+[2024-01-28 21:37:05.726] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/test/decoupled_test.cpp:94:94] time consumed: 44.700886 / 432.61456699999997
+[2024-01-28 21:37:06.031] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/test/decoupled_test.cpp:88:88] processing image /home/lin/CLionProjects/light_glue_onnx/data/left/21.png / /home/lin/CLionProjects/light_glue_onnx/data/right/21.png
+[2024-01-28 21:37:06.031] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:401:401] **** inference image pair start ****
+[2024-01-28 21:37:06.032] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:412:412] preprocessing image_src
+[2024-01-28 21:37:06.032] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:112:112] image_temp size: [1280, 720]
+[2024-01-28 21:37:06.034] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:117:117] image_result size: [512, 288], scale from 0.4 to 0.4
+[2024-01-28 21:37:06.034] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:414:414] preprocessing image_dst
+[2024-01-28 21:37:06.034] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:112:112] image_temp size: [1280, 720]
+[2024-01-28 21:37:06.036] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:117:117] image_result size: [512, 288], scale from 0.4 to 0.4
+[2024-01-28 21:37:06.036] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:124:124] **** extractor inference start ****
+[2024-01-28 21:37:06.036] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:128:128] image shape: [512, 288], channel: 1
+[2024-01-28 21:37:06.040] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:138:138] creating memory info handler
+[2024-01-28 21:37:06.055] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:148:148] inference extractor time consumed: 15.243435
+[2024-01-28 21:37:06.055] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:167:167] inference success.
+[2024-01-28 21:37:06.055] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:124:124] **** extractor inference start ****
+[2024-01-28 21:37:06.055] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:128:128] image shape: [512, 288], channel: 1
+[2024-01-28 21:37:06.056] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:138:138] creating memory info handler
+[2024-01-28 21:37:06.073] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:148:148] inference extractor time consumed: 17.133523
+[2024-01-28 21:37:06.073] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:167:167] inference success.
+[2024-01-28 21:37:06.073] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:180:180] **** extractor post process start ****
+[2024-01-28 21:37:06.073] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:187:187] key points shape: [1, 282, 2]
+[2024-01-28 21:37:06.073] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:191:191] scores shape: [1, 282, 140702324024096]
+[2024-01-28 21:37:06.073] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:196:196] descriptor shape: [1, 282, 256]
+[2024-01-28 21:37:06.073] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:219:219] extractor post process success with 282 key points, 136 / 146.
+[2024-01-28 21:37:06.073] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:180:180] **** extractor post process start ****
+[2024-01-28 21:37:06.073] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:187:187] key points shape: [1, 218, 2]
+[2024-01-28 21:37:06.073] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:191:191] scores shape: [1, 218, 256]
+[2024-01-28 21:37:06.073] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:196:196] descriptor shape: [1, 218, 256]
+[2024-01-28 21:37:06.073] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:219:219] extractor post process success with 218 key points, 118 / 100.
+[2024-01-28 21:37:06.073] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:237:237] **** matcher inference start ****
+[2024-01-28 21:37:06.073] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:246:246] creating memory info handler
+[2024-01-28 21:37:06.074] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:249:249] preparing input tensors
+[2024-01-28 21:37:06.074] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:253:253] trans to one dimension
+[2024-01-28 21:37:06.074] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:267:267] constructing input tensors
+[2024-01-28 21:37:06.074] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:282:282] input node 0 name: kpts0
+[2024-01-28 21:37:06.074] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:287:287] input node shape size: 3, shape: 1, -1, 2
+[2024-01-28 21:37:06.074] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:288:288] input node shape size: 3, shape: 1, 282, 2
+[2024-01-28 21:37:06.074] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:282:282] input node 1 name: kpts1
+[2024-01-28 21:37:06.074] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:287:287] input node shape size: 3, shape: 1, -1, 2
+[2024-01-28 21:37:06.074] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:288:288] input node shape size: 3, shape: 1, 218, 2
+[2024-01-28 21:37:06.074] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:282:282] input node 2 name: desc0
+[2024-01-28 21:37:06.074] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:287:287] input node shape size: 3, shape: 1, -1, 256
+[2024-01-28 21:37:06.074] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:288:288] input node shape size: 3, shape: 1, 282, 256
+[2024-01-28 21:37:06.074] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:282:282] input node 3 name: desc1
+[2024-01-28 21:37:06.074] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:287:287] input node shape size: 3, shape: 1, -1, 256
+[2024-01-28 21:37:06.074] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:288:288] input node shape size: 3, shape: 1, 218, 256
+[2024-01-28 21:37:06.074] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:294:294] output node name: matches0
+[2024-01-28 21:37:06.074] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:294:294] output node name: mscores0
+[2024-01-28 21:37:06.088] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:299:299] matcher inference time consumed: 14.778807
+[2024-01-28 21:37:06.088] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:318:318] matcher inference success.
+[2024-01-28 21:37:06.088] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:331:331] **** matcher post process start ****
+[2024-01-28 21:37:06.089] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:339:339] matches shape: 121
+[2024-01-28 21:37:06.089] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:339:339] matches shape: 2
+[2024-01-28 21:37:06.089] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:347:347] matches shape: 121
+[2024-01-28 21:37:06.089] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:388:388] matches size: 120
+[2024-01-28 21:37:06.089] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/test/decoupled_test.cpp:94:94] time consumed: 57.268368 / 307.49916733333333
+[2024-01-28 21:37:06.991] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/test/decoupled_test.cpp:88:88] processing image /home/lin/CLionProjects/light_glue_onnx/data/left/22.png / /home/lin/CLionProjects/light_glue_onnx/data/right/22.png
+[2024-01-28 21:37:06.991] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:401:401] **** inference image pair start ****
+[2024-01-28 21:37:06.991] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:412:412] preprocessing image_src
+[2024-01-28 21:37:06.991] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:112:112] image_temp size: [1280, 720]
+[2024-01-28 21:37:06.992] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:117:117] image_result size: [512, 288], scale from 0.4 to 0.4
+[2024-01-28 21:37:06.992] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:414:414] preprocessing image_dst
+[2024-01-28 21:37:06.992] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:112:112] image_temp size: [1280, 720]
+[2024-01-28 21:37:06.992] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:117:117] image_result size: [512, 288], scale from 0.4 to 0.4
+[2024-01-28 21:37:06.992] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:124:124] **** extractor inference start ****
+[2024-01-28 21:37:06.992] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:128:128] image shape: [512, 288], channel: 1
+[2024-01-28 21:37:06.993] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:138:138] creating memory info handler
+[2024-01-28 21:37:07.007] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:148:148] inference extractor time consumed: 13.988534
+[2024-01-28 21:37:07.007] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:167:167] inference success.
+[2024-01-28 21:37:07.007] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:124:124] **** extractor inference start ****
+[2024-01-28 21:37:07.007] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:128:128] image shape: [512, 288], channel: 1
+[2024-01-28 21:37:07.009] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:138:138] creating memory info handler
+[2024-01-28 21:37:07.025] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:148:148] inference extractor time consumed: 15.974372
+[2024-01-28 21:37:07.025] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:167:167] inference success.
+[2024-01-28 21:37:07.025] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:180:180] **** extractor post process start ****
+[2024-01-28 21:37:07.025] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:187:187] key points shape: [1, 294, 2]
+[2024-01-28 21:37:07.025] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:191:191] scores shape: [1, 294, 140702324024096]
+[2024-01-28 21:37:07.025] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:196:196] descriptor shape: [1, 294, 256]
+[2024-01-28 21:37:07.025] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:219:219] extractor post process success with 294 key points, 150 / 144.
+[2024-01-28 21:37:07.025] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:180:180] **** extractor post process start ****
+[2024-01-28 21:37:07.025] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:187:187] key points shape: [1, 224, 2]
+[2024-01-28 21:37:07.025] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:191:191] scores shape: [1, 224, 256]
+[2024-01-28 21:37:07.025] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:196:196] descriptor shape: [1, 224, 256]
+[2024-01-28 21:37:07.025] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:219:219] extractor post process success with 224 key points, 107 / 117.
+[2024-01-28 21:37:07.025] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:237:237] **** matcher inference start ****
+[2024-01-28 21:37:07.025] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:246:246] creating memory info handler
+[2024-01-28 21:37:07.025] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:249:249] preparing input tensors
+[2024-01-28 21:37:07.025] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:253:253] trans to one dimension
+[2024-01-28 21:37:07.025] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:267:267] constructing input tensors
+[2024-01-28 21:37:07.025] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:282:282] input node 0 name: kpts0
+[2024-01-28 21:37:07.025] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:287:287] input node shape size: 3, shape: 1, -1, 2
+[2024-01-28 21:37:07.025] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:288:288] input node shape size: 3, shape: 1, 294, 2
+[2024-01-28 21:37:07.025] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:282:282] input node 1 name: kpts1
+[2024-01-28 21:37:07.025] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:287:287] input node shape size: 3, shape: 1, -1, 2
+[2024-01-28 21:37:07.025] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:288:288] input node shape size: 3, shape: 1, 224, 2
+[2024-01-28 21:37:07.025] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:282:282] input node 2 name: desc0
+[2024-01-28 21:37:07.025] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:287:287] input node shape size: 3, shape: 1, -1, 256
+[2024-01-28 21:37:07.025] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:288:288] input node shape size: 3, shape: 1, 294, 256
+[2024-01-28 21:37:07.025] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:282:282] input node 3 name: desc1
+[2024-01-28 21:37:07.025] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:287:287] input node shape size: 3, shape: 1, -1, 256
+[2024-01-28 21:37:07.025] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:288:288] input node shape size: 3, shape: 1, 224, 256
+[2024-01-28 21:37:07.025] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:294:294] output node name: matches0
+[2024-01-28 21:37:07.025] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:294:294] output node name: mscores0
+[2024-01-28 21:37:07.037] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:299:299] matcher inference time consumed: 11.783824
+[2024-01-28 21:37:07.037] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:318:318] matcher inference success.
+[2024-01-28 21:37:07.037] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:331:331] **** matcher post process start ****
+[2024-01-28 21:37:07.037] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:339:339] matches shape: 127
+[2024-01-28 21:37:07.037] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:339:339] matches shape: 2
+[2024-01-28 21:37:07.037] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:347:347] matches shape: 127
+[2024-01-28 21:37:07.037] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/src/decoupled_onnx_runner.cpp:388:388] matches size: 127
+[2024-01-28 21:37:07.037] [MineLog] [info] [/home/lin/CLionProjects/light_glue_onnx/test/decoupled_test.cpp:94:94] time consumed: 46.205867 / 242.17584225
