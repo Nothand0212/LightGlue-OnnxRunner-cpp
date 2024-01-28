@@ -40,6 +40,8 @@
 
 ## 遗留BUG
 
+- 2024-01-28
+    - 1. 2024-01-24的遗留的bug，应该是模型的问题。在`decoupled_onnx_test`中，如果用模型`superpoint_lightglue_fused_fp16.onnx`则不会出现相同的问题。
 - 2024-01-24
     - 1. 在GPU环境下运行时，某些图片(如项目里data/left/21.png)会报错`Non-zero status code returned while running MultiHeadAttention node. Name:'MultiHeadAttention_1' Status Message: packed QKV format is not implemented for current GPU. Please disable it in fusion options.`。但是在CPU环境下运行时，不会报错。
 
