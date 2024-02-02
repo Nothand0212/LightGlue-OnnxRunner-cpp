@@ -64,6 +64,7 @@ public:
 
   KeyPoints inferenceImage( const Config& config, const cv::Mat& image );
   KeyPoints getKeyPoints() const;
+  float     getScale() const;
 
   KeyPoints                                 distributeKeyPoints( const KeyPoints& key_points, const cv::Mat& image );
   std::pair<KeyPoints, std::vector<Region>> distributeKeyPointsDebug( const KeyPoints& key_points, const cv::Mat& image );

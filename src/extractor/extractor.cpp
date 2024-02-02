@@ -563,3 +563,8 @@ KeyPoints Extracotr::getKeyPoints() const
 {
   return m_key_points;
 }
+
+float Extracotr::getScale() const
+{
+  return m_scale;
+}

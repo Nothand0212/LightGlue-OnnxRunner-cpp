@@ -71,6 +71,8 @@ target_link_libraries(decoupled_onnx_runner onnxruntime image_process ${OpenCV_L
 add_library(extractor src/extractor/extractor.cpp)
 target_link_libraries(extractor onnxruntime image_process ${OpenCV_LIBS} logger spdlog::spdlog)
 
+add_library(matcher src/matcher/matcher.cpp)
+target_link_libraries(matcher onnxruntime image_process ${OpenCV_LIBS} logger spdlog::spdlog)
 
 add_executable(onnx_test test/onnx_test.cpp)
 target_link_libraries(onnx_test onnxruntime logger spdlog::spdlog)
