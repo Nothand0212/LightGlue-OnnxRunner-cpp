@@ -85,3 +85,6 @@ target_link_libraries(decoupled_test decoupled_onnx_runner onnxruntime image_pro
 
 add_executable(extractor_test test/extractor_test.cpp)
 target_link_libraries(extractor_test extractor onnxruntime image_process ${OpenCV_LIBS} logger spdlog::spdlog)
+
+add_executable(matcher_test test/matcher_test.cpp)
+target_link_libraries(matcher_test matcher extractor onnxruntime image_process ${OpenCV_LIBS} logger spdlog::spdlog)

@@ -71,9 +71,9 @@ int Matcher::initOrtEnv( const Config& config )
       m_session_options.SetGraphOptimizationLevel( GraphOptimizationLevel::ORT_ENABLE_ALL );
     }
 
-    INFO( logger, "Loading matcher model from {0}", config.extractor_path );
+    INFO( logger, "Loading matcher model from {0}", config.matcher_path );
 
-    m_uptr_session = std::make_unique<Ort::Session>( m_env, config.extractor_path.c_str(), m_session_options );
+    m_uptr_session = std::make_unique<Ort::Session>( m_env, config.matcher_path.c_str(), m_session_options );
 
     INFO( logger, "Matcher model loaded" );
     extractNodesInfo( IO::INPUT, m_vec_input_names, m_vec_input_shapes, m_uptr_session, m_allocator );
@@ -107,6 +107,7 @@ int Matcher::inference( const Config& config, const std::vector<cv::Point2f> key
     m_vec_input_shapes[ 2 ] = { 1, static_cast<int>( key_points_src.size() ), 256 };
     m_vec_input_shapes[ 3 ] = { 1, static_cast<int>( key_points_dst.size() ), 256 };
 
+    INFO( logger, "Input shapes initialized" );
     auto   memory_info_handler = Ort::MemoryInfo::CreateCpu( OrtAllocatorType::OrtDeviceAllocator, OrtMemType::OrtMemTypeCPU );
     float* key_points_src_data = new float[ key_points_src.size() * 2 ];
     float* key_points_dst_data = new float[ key_points_dst.size() * 2 ];
@@ -145,6 +146,7 @@ int Matcher::inference( const Config& config, const std::vector<cv::Point2f> key
       descriptor_dst_data     = const_cast<float*>( descriptor_dst.ptr<float>( 0 ) );
     }
 
+    INFO( logger, "Matcher inference input tensors created" );
     std::vector<Ort::Value> input_tensors;
     input_tensors.push_back( Ort::Value::CreateTensor<float>( memory_info_handler, key_points_src_data, key_points_src.size() * 2, m_vec_input_shapes[ 0 ].data(), m_vec_input_shapes[ 0 ].size() ) );
     input_tensors.push_back( Ort::Value::CreateTensor<float>( memory_info_handler, key_points_dst_data, key_points_dst.size() * 2, m_vec_input_shapes[ 1 ].data(), m_vec_input_shapes[ 1 ].size() ) );

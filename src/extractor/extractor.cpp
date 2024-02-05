@@ -79,6 +79,9 @@ cv::Mat Extracotr::prePorcess( const Config& config, const cv::Mat& image, float
   cv::Mat     image_result = normalizeImage( resizeImage( image_temp, config.image_size, scale, fn, interp ) );
   INFO( logger, "image_out size: [{0}, {1}], scale from 1.0 to {3}", image_result.cols, image_result.rows, scale_temp, scale );
 
+  m_width_transformed  = image_result.cols;
+  m_height_transformed = image_result.rows;
+  m_scale              = scale;
   return image_result;
 }
 
@@ -567,4 +570,14 @@ KeyPoints Extracotr::getKeyPoints() const
 float Extracotr::getScale() const
 {
   return m_scale;
+}
+
+int Extracotr::getWidthTransformed() const
+{
+  return m_width_transformed;
+}
+
+int Extracotr::getHeightTransformed() const
+{
+  return m_height_transformed;
 }

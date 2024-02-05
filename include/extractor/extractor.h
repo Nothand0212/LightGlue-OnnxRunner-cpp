@@ -48,6 +48,8 @@ private:
 
   //   std::vector<float> m_scale{ 1.0f, 1.0f };
   float        m_scale{ 1.0f };
+  int          m_height_transformed{ 0 };
+  int          m_width_transformed{ 0 };
   unsigned int m_point_num{ 0 };
 
 private:
@@ -65,6 +67,8 @@ public:
   KeyPoints inferenceImage( const Config& config, const cv::Mat& image );
   KeyPoints getKeyPoints() const;
   float     getScale() const;
+  int       getHeightTransformed() const;
+  int       getWidthTransformed() const;
 
   KeyPoints                                 distributeKeyPoints( const KeyPoints& key_points, const cv::Mat& image );
   std::pair<KeyPoints, std::vector<Region>> distributeKeyPointsDebug( const KeyPoints& key_points, const cv::Mat& image );
