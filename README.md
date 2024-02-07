@@ -5,6 +5,7 @@
 一个简单的ONNX Runtime Light Glue示例。
 
 测试环境：
+
 - Ubuntu 20.04
 - ONNX Runtime onnxruntime-linux-x64-gpu-1.16.3 
 - ONNX Runtime onnxruntime-linux-x64-1.16.3
@@ -32,20 +33,20 @@
 ## 更新日志
 
 - 2024-02-02
-    - 1. 增加了单独的`Matcher`类
+  - 1. 增加了单独的`Matcher`类
 - 2024-01-28
-    - 1. 增加单独的`Extractor`类
+  - 1. 增加单独的`Extractor`类
 - 2024-01-24
-    - 1. 增加非端到端模型的支持（只支持super point 和 light glue）
+  - 1. 增加非端到端模型的支持（只支持super point 和 light glue）
 - 2024-01-20
-    - 1. 目前只支持super point 和 light glue 的端到端模型
+  - 1. 目前只支持super point 和 light glue 的端到端模型
 
 ## 遗留BUG
 
 - 2024-01-28
-    - 1. 2024-01-24的遗留的bug，应该是模型的问题。在`decoupled_onnx_test`中，如果用模型`superpoint_lightglue_fused_fp16.onnx`则不会出现相同的问题。
+  - 1. 2024-01-24的遗留的bug，应该是模型的问题。在`decoupled_onnx_test`中，如果用模型`superpoint_lightglue_fused_fp16.onnx`则不会出现相同的问题。
 - 2024-01-24
-    - 1. 在GPU环境下运行时，某些图片(如项目里data/left/21.png)会报错`Non-zero status code returned while running MultiHeadAttention node. Name:'MultiHeadAttention_1' Status Message: packed QKV format is not implemented for current GPU. Please disable it in fusion options.`。但是在CPU环境下运行时，不会报错。
+  - 1. 在GPU环境下运行时，某些图片(如项目里data/left/21.png)会报错`Non-zero status code returned while running MultiHeadAttention node. Name:'MultiHeadAttention_1' Status Message: packed QKV format is not implemented for current GPU. Please disable it in fusion options.`。但是在CPU环境下运行时，不会报错。
 
 ## 参考
 

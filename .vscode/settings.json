@@ -73,6 +73,12 @@
         "shared_mutex": "cpp",
         "*.ipp": "cpp",
         "__nullptr": "cpp",
-        "filesystem": "cpp"
+        "filesystem": "cpp",
+        "compare": "cpp",
+        "concepts": "cpp",
+        "numbers": "cpp",
+        "ranges": "cpp",
+        "stop_token": "cpp",
+        "semaphore": "cpp"
     }
 }

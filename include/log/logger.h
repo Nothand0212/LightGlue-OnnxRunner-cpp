@@ -21,7 +21,35 @@
 #define DEBUG SPDLOG_LOGGER_DEBUG
 #define TRACE SPDLOG_LOGGER_TRACE
 
-// 创建一个全局的spdlog对象
-extern std::shared_ptr<spdlog::logger> logger;
+class Logger
+{
+private:
+  spdlog::logger* logger_ptr;
 
-void InitLogger( const std::string& log_path );
+  Logger() = default;
+
+  Logger( Logger const& ) = delete;
+  Logger& operator=( Logger const& ) = delete;
+
+public:
+  static Logger& getInstance()
+  {
+    static Logger instance;
+    return instance;
+  }
+
+  spdlog::logger* getLogger()
+  {
+    return logger_ptr;
+  }
+
+  void initLogger( const std::string& log_path )
+  {
+    auto console_logger_sptr = std::make_shared<spdlog::sinks::stdout_color_sink_mt>();
+    auto file_logger_sptr    = std::make_shared<spdlog::sinks::basic_file_sink_mt>( log_path, true );
+    logger_ptr               = new spdlog::logger( "MineLog", spdlog::sinks_init_list{ console_logger_sptr, file_logger_sptr } );
+
+    // Set the log format
+    logger_ptr->set_pattern( "[%Y-%m-%d %H:%M:%S.%e] [%n] [%^%l%$] [%@:%#] %v" );
+  }
+};
