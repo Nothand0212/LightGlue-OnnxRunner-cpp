@@ -88,3 +88,13 @@ target_link_libraries(extractor_test extractor onnxruntime image_process ${OpenC
 
 add_executable(matcher_test test/matcher_test.cpp)
 target_link_libraries(matcher_test matcher extractor onnxruntime image_process ${OpenCV_LIBS} logger spdlog::spdlog)
+
+################### Unit Test ##############################
+# Find Google Test
+find_package(GTest REQUIRED)
+
+# Unit Test
+file(GLOB_RECURSE TEST_SOURCES test/*_test.cpp)
+add_executable(unit_test ${TEST_SOURCES})
+target_link_libraries(unit_test GTest::GTest GTest::Main)
+#############################################################
