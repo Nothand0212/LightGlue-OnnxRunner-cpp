@@ -6,7 +6,7 @@
                 "${workspaceFolder}/**",
                 "${workspaceFolder}/include/**",
                 "/usr/local/include/opencv4/**",
-                "/home/lin/Projects/onnxruntime-linux-x64-gpu-1.16.3/include/**"
+                "/usr/include/eigen3"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",
