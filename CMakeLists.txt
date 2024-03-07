@@ -13,7 +13,7 @@ endif()
 add_definitions(-Wno-deprecated-declarations)
 
 find_package(CUDA REQUIRED)
-set(ONNXRUNTIME_ROOTDIR thirdparty/onnxruntime-linux-x64-gpu-1.16.3)
+set(ONNXRUNTIME_ROOTDIR /home/lin/Projects/onnxruntime-linux-x64-gpu-1.16.3)
 message(STATUS "ONNXRUNTIME_ROOTDIR: ${ONNXRUNTIME_ROOTDIR}")
 include_directories(${ONNXRUNTIME_ROOTDIR}/include)
 link_directories(${ONNXRUNTIME_ROOTDIR}/lib)

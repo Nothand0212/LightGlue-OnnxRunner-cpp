@@ -3,3 +3,4 @@
 /.idea/
 /.history/
 /models/
+/thirdparty/onnxruntime-linux-x64-gpu-1.16.3/

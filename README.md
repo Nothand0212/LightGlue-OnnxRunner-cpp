@@ -7,7 +7,7 @@
 测试环境：
 
 - Ubuntu 20.04
-- ONNX Runtime onnxruntime-linux-x64-gpu-1.16.3 
+- ONNX Runtime onnxruntime-linux-x64-gpu-1.16.3
 - ONNX Runtime onnxruntime-linux-x64-1.16.3
 - CUDA 11.7
 - SPDLOG 1.13.0
@@ -19,6 +19,12 @@
 
 ### 编译
 
+- 需要修改`CMakeLists.txt`文件，指定ONNX Runtime的路径。
+
+```cmake
+set(ONNXRUNTIME_ROOTDIR /home/lin/Projects/onnxruntime-linux-x64-gpu-1.16.3)
+```
+
 ```sh
 git clone https://github.com/Nothand0212/LightGlue-OnnxRunner-cpp.git
 cd LightGlue-OnnxRunner-cpp
@@ -28,14 +34,18 @@ cmake.. && make -j
 
 ### 运行
 
-- 修改`config/param.json`里的路径，包括matcher_path、extractor_path、combiner_path、image_src_path和image_dst_path等。
+- 修改`config/param.json`里的路径为自己的路径，包括
+- 1. matcher_path
+- 2. extractor_path
+- 3. combiner_path
+- 4. image_src_path
+- 5. image_dst_path
+- 6. 其他
 
 ## 更新日志
 
 - 2024-03-07
   - 1. 将spdlog改为纯头文件版本，解决编译问题
-  - 2. 添加onnxruntime-linux-x64-gpu-1.16.3到thirdparty
-  - 3. 修改了CMakeLists.txt，目的是想做到尽量开箱即用。当然目前CUDA环境和OpenCV环境还是需要手动安装的。
 - 2024-02-02
   - 1. 增加了单独的`Matcher`类
 - 2024-01-28
