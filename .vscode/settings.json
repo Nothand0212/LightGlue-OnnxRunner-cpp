@@ -79,6 +79,7 @@
         "numbers": "cpp",
         "ranges": "cpp",
         "stop_token": "cpp",
-        "semaphore": "cpp"
+        "semaphore": "cpp",
+        "core": "cpp"
     }
 }

@@ -2,7 +2,7 @@
 
 #include <cmath>
 
-#include "log/logger.h"
+#include "logger/logger.h"
 #include "utilities/color.h"
 class AccumulateAverage
 {

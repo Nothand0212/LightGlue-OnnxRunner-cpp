@@ -24,4 +24,4 @@
 // 创建一个全局的spdlog对象
 extern std::shared_ptr<spdlog::logger> logger;
 
-void InitLogger( const std::string& log_path );
+void initLogger( const std::string& log_path );

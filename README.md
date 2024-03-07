@@ -7,7 +7,7 @@
 测试环境：
 
 - Ubuntu 20.04
-- ONNX Runtime onnxruntime-linux-x64-gpu-1.16.3 
+- ONNX Runtime onnxruntime-linux-x64-gpu-1.16.3
 - ONNX Runtime onnxruntime-linux-x64-1.16.3
 - CUDA 11.7
 - SPDLOG 1.13.0
@@ -19,22 +19,35 @@
 
 ### 编译
 
-- git clone https://github.com/Nothand0212/LightGlue-OnnxRunner-cpp.git
-- cd LightGlue-OnnxRunner-cpp
-- vim CMakeLists.txt # 修改ONNX_RUNTIME_DIR路径-->set(ONNXRUNTIME_ROOTDIR /home/lin/Projects/onnxruntime-linux-x64-gpu-1.16.3)里的路径是我自己的路径，修改为你自己onnx runtime的路径
-- mkdir build && cd build
-- cmake..
-- make
+- 需要修改`CMakeLists.txt`文件，指定ONNX Runtime的路径。
+
+```cmake
+set(ONNXRUNTIME_ROOTDIR /home/lin/Projects/onnxruntime-linux-x64-gpu-1.16.3)
+```
+
+```sh
+git clone https://github.com/Nothand0212/LightGlue-OnnxRunner-cpp.git
+cd LightGlue-OnnxRunner-cpp
+mkdir build && cd build
+cmake.. && make -j
+```
 
 ### 运行
 
-- 修改`config/param.json`里的路径，包括matcher_path、extractor_path、combiner_path、image_src_path和image_dst_path等。
+- 修改`config/param.json`里的路径为自己的路径，包括
+- 1. matcher_path
+- 2. extractor_path
+- 3. combiner_path
+- 4. image_src_path
+- 5. image_dst_path
+- 6. 其他
 
 ## 更新日志
 
 - 2024-03-07
   - 1. 修改`Extractor`的提取特征点的处理逻辑，提取后先不恢复到原图的坐标，否则会导致匹配结果不准确。
   - 2. 修改运行逻辑，运行时需要指定配置文件路径，例如： `./matcher_test /home/lin/Projects/LightGlue-OnnxRunner-cpp/config/param.json`
+  - 3. 将spdlog改为纯头文件版本，解决编译问题
 - 2024-02-02
   - 1. 增加了单独的`Matcher`类
 - 2024-01-28
@@ -57,3 +70,4 @@
 - [LightGlue-ONNX](https://github.com/fabio-sim/LightGlue-ONNX)
 - [LightGlue-OnnxRunner](https://github.com/OroChippw/LightGlue-OnnxRunner)
 - [ONNX Runtime](https://github.com/microsoft/onnxruntime)
+- [SPDLOG](https://github.com/gabime/spdlog)

@@ -9,9 +9,9 @@
  ******************************************************************************
  */
 
-#include "image_process.h"
-#include "log/logger.h"
+#include "logger/logger.h"
 #include "matcher/matcher.h"
+#include "utilities/image_process.h"
 
 Matcher::Matcher( unsigned int threads_num )
     : m_threads_num( threads_num )
