@@ -16,8 +16,8 @@
 #include <opencv2/opencv.hpp>
 
 #include "base_onnx_runner.h"
-#include "configuration.h"
-#include "image_process.h"
+#include "utilities/config.h"
+#include "utilities/image_process.h"
 
 class CombinedOnnxRunner : public BaseOnnxRunner
 {

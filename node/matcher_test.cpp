@@ -4,14 +4,14 @@
 #include <thread>
 
 #include "base_onnx_runner.h"
-#include "configuration.h"
 #include "extractor/extractor.h"
-#include "image_process.h"
 #include "logger/logger.h"
 #include "matcher/matcher.h"
 #include "utilities/accumulate_average.h"
+#include "utilities/config.h"
+#include "utilities/image_process.h"
 #include "utilities/timer.h"
-#include "visualizer.h"
+#include "utilities/visualizer.h"
 
 std::vector<cv::Mat> readImage( std::vector<cv::String> image_file_vec, bool grayscale = false )
 {

@@ -1,4 +1,4 @@
-#include "image_process.h"
+#include "utilities/image_process.h"
 
 cv::Mat normalizeImage( const cv::Mat& image )
 {

@@ -32,7 +32,7 @@ ${CMAKE_SOURCE_DIR}/thirdparty
 add_library(logger src/logger/logger.cpp)
 target_link_libraries(logger  )
 
-add_library(image_process src/image_process.cpp)
+add_library(image_process src/utilities/image_process.cpp)
 target_link_libraries(image_process ${OpenCV_LIBS} logger  )
 
 add_library(combine_onnx_runner src/combined_onnx_runner.cpp)

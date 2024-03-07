@@ -1,13 +1,13 @@
 #include <opencv2/opencv.hpp>
 
 #include "base_onnx_runner.h"
-#include "combined_onnx_runner/combined_onnx_runner.h"
-#include "configuration.h"
-#include "image_process.h"
+#include "combined_onnx_runner.h"
 #include "logger/logger.h"
 #include "utilities/accumulate_average.h"
+#include "utilities/config.h"
+#include "utilities/image_process.h"
 #include "utilities/timer.h"
-#include "visualizer.h"
+#include "utilities/visualizer.h"
 
 
 std::vector<cv::Mat> readImage( std::vector<cv::String> image_file_vec, bool grayscale = false )
