@@ -9,25 +9,24 @@ elseif(CMAKE_BUILD_TYPE STREQUAL "Release")
     add_definitions(-DRELEASE)
 endif()
 
-
+# SPDLOG 在编译时会有一些警告，这里忽略掉
+add_definitions(-Wno-deprecated-declarations)
 
 find_package(CUDA REQUIRED)
-set(ONNXRUNTIME_ROOTDIR /home/lin/Projects/onnxruntime-linux-x64-gpu-1.16.3)
+set(ONNXRUNTIME_ROOTDIR thirdparty/onnxruntime-linux-x64-gpu-1.16.3)
 message(STATUS "ONNXRUNTIME_ROOTDIR: ${ONNXRUNTIME_ROOTDIR}")
 include_directories(${ONNXRUNTIME_ROOTDIR}/include)
 link_directories(${ONNXRUNTIME_ROOTDIR}/lib)
-# include_directories(/usr/local/cuda/include)
-# link_directories(/usr/local/cuda/lib64)
-
-# find_package(spdlog REQUIRED)
-# message(spdlog_VERSION: ${spdlog_VERSION})
 
 set(OpenCV_CUDA_MODULE_PATH "")
 find_package(OpenCV REQUIRED QUIET)
 message(Opencv version: ${OpenCV_VERSION})
 include_directories(${OpenCV_INCLUDE_DIRS})
 
-include_directories(include)
+include_directories(
+${CMAKE_SOURCE_DIR}/include
+${CMAKE_SOURCE_DIR}/thirdparty
+)
 
 # logger lib
 add_library(logger src/logger/logger.cpp)

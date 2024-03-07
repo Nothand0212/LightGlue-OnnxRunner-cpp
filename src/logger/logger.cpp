@@ -2,7 +2,7 @@
 
 std::shared_ptr<spdlog::logger> logger;
 
-void InitLogger( const std::string& log_path )
+void initLogger( const std::string& log_path )
 {
   auto console_logger_sptr = std::make_shared<spdlog::sinks::stdout_color_sink_mt>();
   auto file_logger_sptr    = std::make_shared<spdlog::sinks::basic_file_sink_mt>( log_path, true );

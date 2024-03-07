@@ -11,9 +11,9 @@
 
 #pragma once
 
-#include "logger/spdlog/sinks/basic_file_sink.h"
-#include "logger/spdlog/sinks/stdout_color_sinks.h"
-#include "logger/spdlog/spdlog.h"
+#include "spdlog/sinks/basic_file_sink.h"
+#include "spdlog/sinks/stdout_color_sinks.h"
+#include "spdlog/spdlog.h"
 
 #define INFO  SPDLOG_LOGGER_INFO
 #define WARN  SPDLOG_LOGGER_WARN
@@ -24,4 +24,4 @@
 // 创建一个全局的spdlog对象
 extern std::shared_ptr<spdlog::logger> logger;
 
-void InitLogger( const std::string& log_path );
+void initLogger( const std::string& log_path );

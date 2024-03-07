@@ -45,7 +45,7 @@ std::vector<cv::Mat> readImage( std::vector<cv::String> image_file_vec, bool gra
 
 int main( int argc, char const* argv[] )
 {
-  InitLogger( "/home/lin/CLionProjects/light_glue_onnx/log/tmp.log" );
+  initLogger( "/home/lin/CLionProjects/light_glue_onnx/log/tmp.log" );
   INFO( logger, "Start" );
 
   Timer             timer;

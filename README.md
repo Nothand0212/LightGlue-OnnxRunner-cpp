@@ -19,12 +19,12 @@
 
 ### 编译
 
-- git clone https://github.com/Nothand0212/LightGlue-OnnxRunner-cpp.git
-- cd LightGlue-OnnxRunner-cpp
-- vim CMakeLists.txt # 修改ONNX_RUNTIME_DIR路径-->set(ONNXRUNTIME_ROOTDIR /home/lin/Projects/onnxruntime-linux-x64-gpu-1.16.3)里的路径是我自己的路径，修改为你自己onnx runtime的路径
-- mkdir build && cd build
-- cmake..
-- make
+```sh
+git clone https://github.com/Nothand0212/LightGlue-OnnxRunner-cpp.git
+cd LightGlue-OnnxRunner-cpp
+mkdir build && cd build
+cmake.. && make -j
+```
 
 ### 运行
 
@@ -32,6 +32,10 @@
 
 ## 更新日志
 
+- 2024-03-07
+  - 1. 将spdlog改为纯头文件版本，解决编译问题
+  - 2. 添加onnxruntime-linux-x64-gpu-1.16.3到thirdparty
+  - 3. 修改了CMakeLists.txt，目的是想做到尽量开箱即用。当然目前CUDA环境和OpenCV环境还是需要手动安装的。
 - 2024-02-02
   - 1. 增加了单独的`Matcher`类
 - 2024-01-28
@@ -54,3 +58,4 @@
 - [LightGlue-ONNX](https://github.com/fabio-sim/LightGlue-ONNX)
 - [LightGlue-OnnxRunner](https://github.com/OroChippw/LightGlue-OnnxRunner)
 - [ONNX Runtime](https://github.com/microsoft/onnxruntime)
+- [SPDLOG](https://github.com/gabime/spdlog)
