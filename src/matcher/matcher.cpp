@@ -10,7 +10,7 @@
  */
 
 #include "image_process.h"
-#include "log/logger.h"
+#include "logger/logger.h"
 #include "matcher/matcher.h"
 
 Matcher::Matcher( unsigned int threads_num )

@@ -10,7 +10,7 @@
  */
 
 #include "combined_onnx_runner/combined_onnx_runner.h"
-#include "log/logger.h"
+#include "logger/logger.h"
 
 CombinedOnnxRunner::CombinedOnnxRunner( unsigned int threads_num ) : threads_num_( threads_num )
 {

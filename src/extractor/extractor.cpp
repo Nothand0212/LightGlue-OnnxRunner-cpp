@@ -1,5 +1,5 @@
 #include "extractor/extractor.h"
-#include "log/logger.h"
+#include "logger/logger.h"
 
 Extracotr::Extracotr( unsigned int threads_num, unsigned int point_num )
     : m_threads_num{ threads_num }, m_point_num{ point_num }

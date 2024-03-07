@@ -10,7 +10,7 @@
  */
 
 #include "decoupled_onnx_runner/decoupled_onxx_runner.h"
-#include "log/logger.h"
+#include "logger/logger.h"
 
 DecoupledOnnxRunner::DecoupledOnnxRunner( unsigned int threads_num ) : threads_num_{ threads_num }
 {

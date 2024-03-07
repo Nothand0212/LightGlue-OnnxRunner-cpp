@@ -13,7 +13,7 @@
 #include <onnxruntime_cxx_api.h>
 
 #include "configuration.h"
-#include "log/logger.h"
+#include "logger/logger.h"
 #include "opencv4/opencv2/core.hpp"
 #include "opencv4/opencv2/core/mat.hpp"
 #include "opencv4/opencv2/core/types.hpp"
