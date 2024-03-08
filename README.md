@@ -45,7 +45,9 @@ cmake.. && make -j
 ## 更新日志
 
 - 2024-03-07
-  - 1. 将spdlog改为纯头文件版本，解决编译问题
+  - 1. 修改`Extractor`的提取特征点的处理逻辑，提取后先不恢复到原图的坐标，否则会导致匹配结果不准确。
+  - 2. 修改运行逻辑，运行时需要指定配置文件路径，例如： `./matcher_test /home/lin/Projects/LightGlue-OnnxRunner-cpp/config/param.json`
+  - 3. 将spdlog改为纯头文件版本，解决编译问题
 - 2024-02-02
   - 1. 增加了单独的`Matcher`类
 - 2024-01-28
@@ -55,12 +57,12 @@ cmake.. && make -j
 - 2024-01-20
   - 1. 目前只支持super point 和 light glue 的端到端模型
 
-## 遗留BUG
+~~## 遗留问题~~
 
-- 2024-01-28
-  - 1. 2024-01-24的遗留的bug，应该是模型的问题。在`decoupled_onnx_test`中，如果用模型`superpoint_lightglue_fused_fp16.onnx`则不会出现相同的问题。
-- 2024-01-24
-  - 1. 在GPU环境下运行时，某些图片(如项目里data/left/21.png)会报错`Non-zero status code returned while running MultiHeadAttention node. Name:'MultiHeadAttention_1' Status Message: packed QKV format is not implemented for current GPU. Please disable it in fusion options.`。但是在CPU环境下运行时，不会报错。
+~~- 2024-01-28~~
+~~  - 1. 2024-01-24的遗留的bug，应该是模型的问题。在`decoupled_onnx_test`中，如果用模型`superpoint_lightglue_fused_fp16.onnx`则不会出现相同的问题。~~
+~~- 2024-01-24~~
+~~  - 1. 在GPU环境下运行时，某些图片(如项目里data/left/21.png)会报错`Non-zero status code returned while running MultiHeadAttention node. Name:'MultiHeadAttention_1' Status Message: packed QKV format is not implemented for current GPU. Please disable it in fusion options.`。但是在CPU环境下运行时，不会报错。~~
 
 ## 参考
 
