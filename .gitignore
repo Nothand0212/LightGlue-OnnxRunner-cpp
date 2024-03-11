@@ -3,4 +3,5 @@
 /.idea/
 /.history/
 /models/
+/log_data/
 /thirdparty/onnxruntime-linux-x64-gpu-1.16.3/
