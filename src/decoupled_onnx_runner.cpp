@@ -279,20 +279,20 @@ int DecoupledOnnxRunner::inferenceMatcher( const Config& config, std::vector<cv:
 
     for ( int i = 0; i < input_node_names_matcher_.size(); i++ )
     {
-      INFO( logger, "input node {0} name: {1}", i, input_node_names_matcher_[ i ] );
+      // INFO( logger, "input node {0} name: {1}", i, input_node_names_matcher_[ i ] );
 
       Ort::TypeInfo type_info   = session_uptr_matcher_->GetInputTypeInfo( i );
       auto          tensor_info = type_info.GetTensorTypeAndShapeInfo();
       auto          shape       = tensor_info.GetShape();
-      INFO( logger, "input node shape size: {0}, shape: {1}, {2}, {3}", shape.size(), shape[ 0 ], shape[ 1 ], shape[ 2 ] );
-      INFO( logger, "input node shape size: {0}, shape: {1}, {2}, {3}", input_node_shapes_matcher_[ i ].size(), input_node_shapes_matcher_[ i ][ 0 ], input_node_shapes_matcher_[ i ][ 1 ], input_node_shapes_matcher_[ i ][ 2 ] );
+      // INFO( logger, "input node shape size: {0}, shape: {1}, {2}, {3}", shape.size(), shape[ 0 ], shape[ 1 ], shape[ 2 ] );
+      // INFO( logger, "input node shape size: {0}, shape: {1}, {2}, {3}", input_node_shapes_matcher_[ i ].size(), input_node_shapes_matcher_[ i ][ 0 ], input_node_shapes_matcher_[ i ][ 1 ], input_node_shapes_matcher_[ i ][ 2 ] );
     }
 
 
-    for ( const auto& name : output_node_names_matcher_ )
-    {
-      INFO( logger, "output node name: {0}", name );
-    }
+    // for ( const auto& name : output_node_names_matcher_ )
+    // {
+    //   INFO( logger, "output node name: {0}", name );
+    // }
 
     timer_extractor_.tic();
     auto output_tensor_temp = session_uptr_matcher_->Run( Ort::RunOptions{ nullptr }, input_node_names_matcher_.data(), input_tensors.data(), input_tensors.size(), output_node_names_matcher_.data(), output_node_names_matcher_.size() );

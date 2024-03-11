@@ -44,14 +44,14 @@ std::vector<cv::Mat> readImage( std::vector<cv::String> image_file_vec, bool gra
 
 int main( int argc, char const* argv[] )
 {
-  initLogger( "/home/lin/CLionProjects/light_glue_onnx/log/tmp.log" );
+  initLogger( "/home/lin/Projects/LightGlue-OnnxRunner-cpp/log/tmp.log" );
   INFO( logger, "Start" );
 
   Timer             timer;
   AccumulateAverage accumulate_average_timer;
 
   Config cfg{};
-  cfg.readConfig( "/home/lin/CLionProjects/light_glue_onnx/config/param.json" );
+  cfg.readConfig( "/home/lin/Projects/LightGlue-OnnxRunner-cpp/config/param.json" );
 
   std::vector<cv::String> image_file_src_vec;
   std::vector<cv::String> image_file_dst_vec;
