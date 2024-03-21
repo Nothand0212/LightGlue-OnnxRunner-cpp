@@ -13,7 +13,11 @@
 - SPDLOG 1.13.0
 - OpenCV 4.9.0
 
-![结果](doc/Matches_screenshot_20.01.2024.png)
+<!-- ![结果](doc/Matches_screenshot_20.01.2024.png) -->
+
+<align="center">
+<img src="doc/superpoint-lightglue.gif" width="800">
+</align>
 
 ## 编译运行
 
