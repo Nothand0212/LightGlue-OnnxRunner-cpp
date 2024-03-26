@@ -14,16 +14,17 @@
 - OpenCV 4.9.0
 
 <!-- ![结果](doc/Matches_screenshot_20.01.2024.png) -->
-
-<align="center">
-<img src="doc/superpoint-lightglue.gif" width="800">
-</align>
+<div align="center">
+  <img src="doc/superpoint-lightglue.gif" width="800">
+</div>
+>
 
 ## 编译运行
 
 ### 编译
 
-- 需要修改`CMakeLists.txt`文件，指定ONNX Runtime的路径。
+- 需要修改`CMakeLists.txt`文件，指定ONNX Runtime的路径。可以在[这里下载](https://github.com/microsoft/onnxruntime/releases)，选择1.16.3版本。
+- 下载后解压缩，将文件夹的路径修改为`ONNXRUNTIME_ROOTDIR`变量的值。
 
 ```cmake
 set(ONNXRUNTIME_ROOTDIR /home/lin/Projects/onnxruntime-linux-x64-gpu-1.16.3)
